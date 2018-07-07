@@ -1,0 +1,45 @@
+<form class="form-horizontal"   (submit)="registerData()">
+  
+    
+    
+  <div class="col-sm-3"  >
+                                                                                                                                                                                                                                                                       
+<fieldset>
+  <legend>Registration</legend>
+
+  
+    <div class="form-group">
+      <label for="InputIndex">Index Number</label>
+      <input type="text" class="form-control"  placeholder="Enter Index Number" name="index" [(ngModel)]="index" >
+    </div>
+  
+
+    <div class="form-group">
+        <label for="InputName">Your Name</label>
+        <input type="text" class="form-control" placeholder="Enter name" name="name" [(ngModel)]="name">   
+    </div>  
+
+        
+
+    <div class="form-group">
+          <label for="InputEmail1">Email address</label>
+          <input type="email" class="form-control"  placeholder="Enter email" name="email" [(ngModel)]="email">               
+            </div>
+        
+  
+    <div class="form-group">
+        <label for="InputPassword">Password</label>
+        <input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="password">
+  </div>
+</fieldset>
+  <fieldset>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="reset" class="btn btn-default">Reset</button>
+</fieldset>
+
+
+</div>
+
+</form>
+

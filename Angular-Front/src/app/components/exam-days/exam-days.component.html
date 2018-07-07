@@ -1,0 +1,80 @@
+<form class="form-horizontal"  (submit)="ExamDays()" >
+  
+    
+    
+    <div class="col-sm-3"  >
+                                                                                                                                                                                                                                                                         
+  <fieldset>
+    <legend>Examination Days</legend>
+  
+    
+      <div class="form-group">
+        <label for="Date">Date</label>
+        <input type="text" class="form-control"  placeholder="Enter Date" name="date" [(ngModel)]="date">
+      </div>
+    
+  
+      <div class="form-group">
+          <label for="Time">Time</label>
+          <input type="text" class="form-control" placeholder="Enter Time" name="time" [(ngModel)]="time" >   
+      </div>  
+      
+  
+     <!--<div class="form-group">
+        <label for="Year">Year</label>
+        <input type="text" class="form-control" placeholder="Enter Year" name="year" [(ngModel)]="year" >   
+    </div>>-->
+  
+    
+     
+          
+     <div class="form-group">
+           <label for="Subject">Subject</label>
+                <input type="text" class="form-control" placeholder="Enter subject Number" name="subject" [(ngModel)]="subject" >   
+      </div>  
+         <!--       
+  
+      <div class="form-group">
+      <label for="subjects">Select The Subjects</label>
+      <ng-multiselect-dropdown
+      
+      [placeholder]="'Select the Subjects'"
+      [data]="subjects"
+      [(ngModel)]="selectedSubjects"
+      [settings]="subjectSettings"
+      (onSelect)="onItemSelect($event)"
+      (onSelectAll)="onSelectAll($event)"
+  >
+  </ng-multiselect-dropdown>
+  </div>
+  -->
+          
+          
+    <!--<div>
+      <span>Select the year</span>
+      <select>
+        <option *ngFor="let Year of Years">{{Year}}</option>
+      </select>
+    </div>-->
+   
+   <!-- <div>
+        <span>Select the subjects</span>
+        <select>
+          <option *ngFor="let subjects of subjects">{{subject}}</option>
+        </select>
+      </div>-->
+    
+      
+  </fieldset>
+    <fieldset>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-default">Reset</button>
+  </fieldset>
+  
+  
+  </div>
+  
+  </form>
+  
+  

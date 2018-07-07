@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-body">
+      <h4 card="card-title">Registered Exams</h4>
+      <table class="table table-hover">
+        <thead>
+          <tr class="table-success">
+            <!-- <th>ID</th> -->
+            <th>Name</th>
+            <th>Index</th>
+            <th>Year</th>
+            <th>Subject</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary" *ngFor="let exam of exams">
+            <!-- <td>{{exam._id}}</td> -->
+            <td>{{exam.name}}</td>
+            <td>{{exam.index}}</td>
+            <td>{{exam.year}}</td>
+            <td>{{exam.subject}}</td>
+            
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

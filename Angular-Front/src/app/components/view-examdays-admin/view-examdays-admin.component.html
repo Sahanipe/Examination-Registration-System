@@ -1,0 +1,26 @@
+<div class="card" id="content" #content>
+    <div class="card-body">
+      <h4 card="card-title">Examination Time Table</h4>
+      
+      <table class="table table-hover">
+        <thead>
+          <tr class="table-success">
+            
+            <th>Date</th>
+            <th>Time</th>
+            <th>Subject</th>
+            <td>Operations</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary" *ngFor="let examday of examdays">
+            <td>{{examday.date}}</td>
+            <td>{{examday.time}}</td>
+            <td>{{examday.subject}}</td>
+            <td><button class="btn btn-danger" (click)="doDelete(examday)">Delete</button></td>
+  
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

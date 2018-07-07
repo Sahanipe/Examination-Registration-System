@@ -1,0 +1,35 @@
+
+<form class="form-horizontal" (submit)="loginUser()">
+    
+    
+  <div class="col-sm-3"  >
+                                                                                                                                                                                                                                                                       
+<fieldset>
+  <legend>Login</legend>
+
+
+  
+      <div class="form-group">
+
+          <label for="Index">Index</label>
+          <input type="index" class="form-control"  placeholder="Enter index" name="index" [(ngModel)]="index">
+          
+        </div>
+ 
+  
+  <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" class="form-control"  placeholder="Password" name="password" [(ngModel)]="password">
+  </div>
+</fieldset>
+  <fieldset>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="Cancel" class="btn btn-default">Cancel</button>
+</fieldset>
+
+
+</div>
+
+</form>
+

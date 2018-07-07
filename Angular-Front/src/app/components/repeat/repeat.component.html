@@ -1,0 +1,87 @@
+<form class="form-horizontal"  (submit)="registerExamRepeat()" >
+  
+    
+    
+    <div class="col-sm-3"  >
+                                                                                                                                                                                                                                                                         
+  <fieldset>
+    <legend>Repeat Exam Registration</legend>
+  
+    
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" class="form-control"  placeholder="Enter Name" name="name" [(ngModel)]="name">
+      </div>
+    
+  
+      <div class="form-group">
+          <label for="Index Number">Index Number</label>
+          <input type="text" class="form-control" placeholder="Enter Index Number" name="index" [(ngModel)]="index" >   
+      </div>  
+      
+  
+     <!--<div class="form-group">
+        <label for="Year">Year</label>
+        <input type="text" class="form-control" placeholder="Enter Year" name="year" [(ngModel)]="year" >   
+    </div>>-->
+  
+    
+     <div class="form-group">
+          <label for="Year">Year of study</label>
+               <select class="custom-select" [(ngModel)]="year" name="year">
+                  <option selected="">Select the Year of study</option>
+                  <option  *ngFor="let year of years">{{year}} </option>
+                  </select>
+                </div>
+  
+          
+     <div class="form-group">
+           <label for="Subject">Subject(Please use R before the subject code. eg-RSCS3121)</label>
+                <input type="text" class="form-control" placeholder="Enter subject Number" name="subject" [(ngModel)]="subject" >   
+      </div>  
+         <!--       
+  
+      <div class="form-group">
+      <label for="subjects">Select The Subjects</label>
+      <ng-multiselect-dropdown
+      
+      [placeholder]="'Select the Subjects'"
+      [data]="subjects"
+      [(ngModel)]="selectedSubjects"
+      [settings]="subjectSettings"
+      (onSelect)="onItemSelect($event)"
+      (onSelectAll)="onSelectAll($event)"
+  >
+  </ng-multiselect-dropdown>
+  </div>
+  -->
+          
+          
+    <!--<div>
+      <span>Select the year</span>
+      <select>
+        <option *ngFor="let Year of Years">{{Year}}</option>
+      </select>
+    </div>-->
+   
+   <!-- <div>
+        <span>Select the subjects</span>
+        <select>
+          <option *ngFor="let subjects of subjects">{{subject}}</option>
+        </select>
+      </div>-->
+    
+      
+  </fieldset>
+    <fieldset>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-default">Reset</button>
+  </fieldset>
+  
+  
+  </div>
+  
+  </form>
+  
+  

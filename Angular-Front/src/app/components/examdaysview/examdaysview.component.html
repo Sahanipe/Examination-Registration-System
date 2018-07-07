@@ -1,0 +1,23 @@
+<div class="card" id="content" #content>
+    <div class="card-body">
+      <h4 card="card-title">Undergraduate Examination Time table</h4>
+      <button type="button" class="btn btn-warning" (click)="downloadPDF()">Generate PDF</button>
+      <table class="table table-hover">
+        <thead>
+          <tr class="table-success">
+            <th>Date</th>
+            <th>Time</th>
+            <th>Subject</th>
+        </thead>
+        <tbody>
+          <tr class="table-primary" *ngFor="let examday of examdays">
+            <td>{{examday.date}}</td>
+            <td>{{examday.time}}</td>
+            <td>{{examday.subject}}</td>
+         
+  
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
